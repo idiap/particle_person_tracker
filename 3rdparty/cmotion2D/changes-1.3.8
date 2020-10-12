@@ -1,0 +1,44 @@
+Motion2D 1.3.8 is an open source release.
+
+
+This file describes the changes between Motion2D 1.3.7 and 1.3.8.
+
+****************************************************************************
+*                           General                                        *
+****************************************************************************
+
+- Possibility to get the covariance matrix of the estimated motion model
+  parameters.
+- Bug fixes.
+
+****************************************************************************
+*                           Library                                        *
+****************************************************************************
+
+- In CMotion2DEstimator, addition of new methods to get the covariance 
+  matrix of the estimated motion model parameters: 
+   . CMotion2DEstimator::computeCovarianceMatrix()
+   . CMotion2DEstimator::isCovarianceMatrixComputed()
+   . CMotion2DEstimator::getCovarianceMatrix(). 
+
+- In CMotion2DEstimator, the method CMotion2DEstimator::initialize() was
+  removed (it becomes obsolete).
+
+- In CMotion2DPyramid, suppression of memory leeks when images are very
+  small.
+
+
+****************************************************************************
+*                           Examples                                        *
+****************************************************************************
+
+- The Motion2D example:
+   . addition of an option (-z) to compute and print the covariance matrix of
+     the estimated motion model parameters.
+
+
+****************************************************************************
+*                           Documentation                                  *
+****************************************************************************
+
+- Some improvements.

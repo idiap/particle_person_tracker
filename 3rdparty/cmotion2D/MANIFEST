@@ -1,0 +1,27 @@
+README		Getting started with Motion2D
+README.MOTION2D	To be included with libraries using Motion2D
+INSTALL		How to install Motion2D
+PORTING		Notes about porting Motion2D
+changes.<ver>	List of changes from the last version
+LICENCE.QPL	Licence statement
+ANNOUNCE	Motion2D overview, as posted to the net
+FAQ		Frequently Answered Questions about Motion2D
+MANIFEST	This file
+
+Directories:
+------------
+bin		Place for Motion2D executables depending on platform.
+configs		Platform/compiler configuration files.
+doc		Motion2D documentation in HTML format.
+examples	Motion2D example programs
+include		Motion2D include files
+lib		Place for the Motion2D library depending on platform 
+                and compiler. 
+src		Motion2D source code.
+windows		Place for the Visual Studio project (.dsp) files provided
+		to compile Motion2D under windows with Microsoft Visual C++
+		(only in the Professional Edition).
+test/sequence	The "roudabout" video sequence given as example.
+test/support	An estimation support video sequence given as example 
+                associated to the "roudabout" video sequence.
+test/motion	Motion model file given as example.

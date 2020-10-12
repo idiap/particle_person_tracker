@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Motion2D_EXE - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\fspindle\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "_CONSOLE" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "MOTION2D_DLL_IMPORTS" /D "__NO_IMAGEIO_PNG_" /D "__NO_IMAGEIO_MPEG_" /Fp"Release/Motion2D_EXE.pch" /YX /Fo"Release/" /Fd"Release/" /FD /TP /I../../include /c 
+"Z:\soft\Equipe\motion-2D\release\Motion2D-1.3.11.1\examples\Motion2D.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\fspindle\LOCALS~1\Temp\RSP34.tmp" 
+Creating temporary file "C:\DOCUME~1\fspindle\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+..\..\lib\WIN32\Motion2D.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/Motion2D.Dynamic.pdb" /machine:I386 /out:"..\..\bin\WIN32\Motion2D.Dynamic.exe" 
+".\Release\Motion2D.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\fspindle\LOCALS~1\Temp\RSP35.tmp"
+<h3>Output Window</h3>
+Compiling...
+Motion2D.cpp
+../../include\CReader.h(65) : warning C4251: 'streamName' : class 'std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >' needs to have dll-interface to be used by clients of class 'CReader'
+../../include\CWriter.h(64) : warning C4251: 'streamName' : class 'std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >' needs to have dll-interface to be used by clients of class 'CWriter'
+Linking...
+
+
+
+<h3>Results</h3>
+Motion2D.Dynamic.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

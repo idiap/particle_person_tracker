@@ -1,0 +1,44 @@
+Motion2D 1.3.9 is an open source release.
+
+
+This file describes the changes between Motion2D 1.3.8 and 1.3.9.
+
+****************************************************************************
+*                           General                                        *
+****************************************************************************
+
+- New Open Source license: the GNU Public License (GPL) is replaced by the Q
+  Public License (QPL).
+- The config files are modified in order the get automatically the compiler
+  version, even if GNU g++ version greater than 3.x, and addition of some
+  optimization options.
+- Bug fixes.
+
+****************************************************************************
+*                           Library                                        *
+****************************************************************************
+
+- In CMotion2DImage, addition of new methods: 
+   . CMotion2DImage::And()
+
+- In CMotion2DModel, addition of new methods: 
+   . CMotion2DModel::invert()
+   . CMotion2DModel::operator=()
+
+
+****************************************************************************
+*                           Examples                                        *
+****************************************************************************
+
+- The Motion2D example:
+   . In the previous versions, when an error occured during the motion
+     estimation the program was stopped. Now, it prints a warning like " Error
+     during motion estimation, Possible reason: not enought gradient" and sets
+     the estimated motion model to zero.
+
+
+****************************************************************************
+*                           Documentation                                  *
+****************************************************************************
+
+- Some improvements.

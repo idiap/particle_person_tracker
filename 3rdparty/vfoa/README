@@ -1,0 +1,9 @@
+This is a component to estimate the visual focus of attention given a list of
+person and a list of objects.
+
+The library is used easily by declaring a VfoaManager object. This object must
+then be updated with lists of targets and objects.
+
+The VFOA distribution list is returned by a getter in the VfoaManager
+
+

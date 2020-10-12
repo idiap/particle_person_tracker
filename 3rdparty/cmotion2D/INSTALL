@@ -1,0 +1,51 @@
+			  INSTALLING Motion2D
+
+
+You may need to be root, depending on the permissions of the directories
+where you choose to install Motion2D.
+
+
+1.  Unpack the archive if you have not done so already:
+
+	cd <install_directory>
+	gunzip Motion2D-x.y.z.tar.gz	# uncompress the archive
+	tar xf Motion2D-x.y.z.tar	# unpack it
+
+    This creates the directory <install_directory>/Motion2D-x.y.z 
+    containing the files from the main archive.
+
+    Make a symlink from Motion2D-x.y.z to Motion2D:
+
+	ln -s Motion2D-x.y.z Motion2D
+
+
+2.  Building.
+
+    This step compiles the Motion2D library, and builds the example programs.
+
+    Type:
+
+	cd <install_directory>/Motion2D-x.y.z
+	./configure
+
+    This will configure the Motion2D library for your machine. 
+    Run ./configure -help
+    to get a list of configuration options. Read PLATFORMS for a
+    list of supported platforms.
+
+    To create the library and compile all examples:
+
+	make
+
+    If your platform or compiler is not supported, read PORTING.  If it is
+    supported but you have problems, see http://www.irisa.fr/vista/Motion2D
+
+
+3.  The online HTML documentation is installed in
+    <install_directory>/Motion2D-x.y.z/doc/html/ 
+
+    The main page is <install_directory>/Motion2D-x.y.z/doc/html/index.html
+
+
+
+That's all. Motion2D is now installed.

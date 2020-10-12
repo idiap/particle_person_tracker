@@ -1,0 +1,51 @@
+Motion2D 1.3.7 is an open source release.
+
+
+This file describes the changes between Motion2D 1.3.6 and 1.3.7.
+
+****************************************************************************
+*                           General                                        *
+****************************************************************************
+
+- Add new motion models, support new image file format.
+
+****************************************************************************
+*                           Library                                        *
+****************************************************************************
+
+- In CMotion2DModel, addition of new motion models: 
+   . MDL_TY,
+   . MDL_AFF_TX_NULL, 
+   . MDL_AFF_TY_NULL, 
+   . MDL_AFF_DIV_NULL, 
+   . MDL_AFF_ROT_NULL,
+   . MDL_AFF_HYP1_NULL, 
+   . MDL_AFF_HYP2_NULL. 
+  To know more about these motion models see CMotion2DModel::EIdModel.
+- In CMotion2DEstimator, addition of a new method estimate() able to proceed
+  with an unsigned char support.
+- CMotion2DImage supports the following image file formats: PNG and PNM. The
+  different PNM formats are: PGM (P5), PPM (P6).
+
+****************************************************************************
+*                           Examples                                        *
+****************************************************************************
+
+- The Motion2D example:
+   . support now the new motion models,
+   . addition of some options (-a and -c) to specify the estimation support
+     to consider. This option precise a video sequence path where each image 
+     will be considered as support.
+   . addition of some options (-j, -k, -t, -v) to fix the size of the 
+     back-warped image sequence and the position of the first proceeded 
+     frame in this sequence.
+   . support for PNG and PNM (PPM P6) image file format.
+
+- The Warping example: 
+   . support for PNG and PNM (PPM P6) image file format.
+
+****************************************************************************
+*                           Documentation                                  *
+****************************************************************************
+
+- Some improvements.

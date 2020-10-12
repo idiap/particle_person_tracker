@@ -1,0 +1,29 @@
+This software was developed with the Free Edition of Motion2D. 
+
+Motion2D is a product of Inria (see http://www.irisa.fr/vista/Motion2D).
+Motion2D is released in two different editions:
+
+- The Motion2D Free Edition, which may be used free of charge for developing
+  free (non-proprietary) software on Unix platforms. This version is available
+  for download from http://www.irisa.fr/vista/Motion2D and is used by this
+  program.
+
+- The Motion2D Professional Edition, which may be used to develop
+  commercial/proprietary software on Unix and Microsoft Windows. For pricing
+  and availability of the Professional Edition, please contact
+  Motion2D@irisa.fr or:
+
+        Irisa/Inria Rennes
+	Patrick Bouthemy
+        Projet Vista
+        Campus Universitaire de Beaulieu
+        35042 Rennes Cedex
+        France
+
+        fax:   +33 2 99 84 71 71
+        email: Patrick.Bouthemy@irisa.fr
+        www:   http://www.irisa.fr/vista
+
+For further information about Motion2D, please see the Vista web site:
+http://www.irisa.fr/vista or contact Patrick Bouthemy at
+Patrick.Bouthemy@irisa.fr

@@ -1,0 +1,92 @@
+                       Frequently Asked Questions
+
+Please note: the latest version of this and other FAQ lists are available at:
+                        http://www.irisa.fr/vista/Motion2D
+
+
+   1. Who is IRISA? 
+
+      Irisa (http://www.irisa.fr) is a publicly funded research laboratory with
+      a staff of 370, including 150 full-time research scientists or teaching
+      research scientists and 115 postgraduate students. INRIA, the CNRS, the
+      University of Rennes 1 and INSA Rennes are all partners in this mixed
+      research unit.
+
+      Twenty research projects or actions are centered around four major
+      scientific topics, i.e. networks and systems- software engineering and
+      symbolic computation - man-machine interaction, images, data, knowledge -
+      simulation and optimization of complex systems.  These generic themes
+      find their application in many fields, resulting in interdisciplinary
+      cooperation with other leading professionals from both the academic and
+      the industrial world, in areas such as telecommunications, multimedia,
+      transport, genome science, emerging technologies applied to health,
+      environment etc.
+
+   2. Who is VISTA? 
+
+      Vista (http://www.irisa.fr/vista) is one of the Irisa's research
+      projects. Vista research work is concerned with image sequence analysis
+      and active vision. More precisely, we address two broad issues: analysis
+      of physical phenomena for providing image-based or scene-based
+      motion-related measurements, and for investigating recognition and
+      interpretation of temporal events; perception and control of automated or
+      robot systems, for handling manipulation, tracking, navigation,
+      surveillance or exploration tasks.
+
+   3. What kind of licenses exist for Motion2D? 
+
+      The Motion2D toolkit is available under two different licenses: The
+      Professional Edition for commercial use, and the Free Edition for
+      developing free/open source software under the Q Public License. There is
+      more information about the QPL at the Trolltech web site
+      (http://www.trolltech.com/qpl).
+
+   4. What are the differences between the Professional and the Free Edition of
+      Motion2D?
+
+      You may write commercial/proprietary/non-free software only if you have
+      purchased the Professional Edition. The library itself is the same. With
+      the commercial edition, you also get technical support and
+      upgrades. Motion2D for Microsoft Windows is only available as
+      Professional Edition.
+
+   5. I don't want to give away my source code. What do I do? 
+
+      Then you need the Motion2D Professional Edition. 
+      Please contact Motion2D@irisa.fr
+
+   6. Can I charge for my application? 
+
+      If you have the Professional Edition: Yes, of course. If you use
+      the Free Edition your software must be freely distributable
+      and you must include the source. 
+
+      The Free Edition is intended for free software. We realize
+      that CD-ROMs cost money to produce, for example, so you
+      can charge a copying fee. 
+
+   7. Where can I find Motion2D? 
+
+      The latest version of Motion2D Free Edition can be downloaded from
+      http://www.irisa.fr/vista/Motion2D. 
+
+   8. I want to port Motion2D to a new platform. What do I do? 
+
+      If the new platform is POSIX-like System, it's simple. Read the file
+      PORTING for details.
+
+   9. I found a bug and I need it fixed! 
+
+      We try to support the developers using the Motion2D Free Edition as well,
+      and we take all bug reports seriously, no matter who they come from. But,
+      of course, when there's too much to do, our customers have higher
+      priority.
+
+  10. What kind of image input/output are provided?
+
+      The CMotion2DImage class is only provided for convenience in order to
+      build the Motion2D example programs. Therefore, image input manipulations
+      are only supported for MPEG2, PNG and PNM file format. Image output
+      manipulations are restricted to PNG and PNM file format The different PNM
+      formats are PGM P5 and PPM P6.
+

@@ -1,0 +1,10 @@
+PersonId id
+BoundingBox region
+Vec3DFloat position
+Vec3DFloat pose
+Face[] faces
+float64 speaking_probability
+string vfoa_target
+ClassificationResult identity
+ClassificationResult gender
+ClassificationResult age

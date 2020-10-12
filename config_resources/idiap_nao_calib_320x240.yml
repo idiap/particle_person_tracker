@@ -1,0 +1,42 @@
+%YAML:1.0
+intrisics_left: !!opencv-matrix
+    rows: 3
+    cols: 3
+    dt: f
+    data: [ 271.476015, 0.000000, 151.148025, 
+        0.000000, 269.252741, 127.633857, 0.000000, 
+        0.000000, 1.000000]
+intrisics_right: !!opencv-matrix
+    rows: 3
+    cols: 3
+    dt: f
+    data: [ 284.313156, 0.000000, 162.540434, 
+        0.000000, 281.956911, 127.182989, 0.000000, 
+        0.000000, 1.000000]
+distortion_left: !!opencv-matrix
+    rows: 5
+    cols: 1
+    dt: f
+    data: [ -0.077024, 0.079723, 0.008017, 
+        -0.003910, 0.000000]
+distortion_right: !!opencv-matrix
+    rows: 5
+    cols: 1
+    dt: f
+    data: [ -0.007534, -0.118707, 0.007770, 
+        0.005685, 0.000000]
+ext_rotation: !!opencv-matrix
+    rows: 3
+    cols: 3
+    dt: f
+    data: [ 0.997706, -0.007766, -0.067252, 
+        0.008212, 0.999946, 0.006364, 0.067199, 
+        -0.006902, 0.997716]
+ext_translation: !!opencv-matrix
+    rows: 3
+    cols: 1
+    dt: f
+    data: [ -42.468009, 0.0, 0.0]
+    !!data: [ -42.468009, 3.227379, 18.323748]
+width: 320
+height: 240

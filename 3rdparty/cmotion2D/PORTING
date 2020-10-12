@@ -1,0 +1,43 @@
+		    PORTING Motion2D TO OTHER PLATFORMS
+
+Read this file if you want to port Motion2D to a new platform or C++
+compiler.  If you come across any problems, feel free to send mail to
+Motion2D@irisa.fr
+
+			     REQUIREMENTS
+
+The new platform needs no specific requirements. But if it is not a 
+Unix system things can be complicate. Porting to other Unixes is generally
+straight-forward.
+
+Motion2D requires that your C++ compiler supports templates. The compiler 
+must recognize the .cpp extension. .
+
+			       PATCHES
+
+Please send us the patches you had to make so we can add them to the
+code base; then we can support the new platform in an orderly manner. 
+(We want Motion2D to run on as many platforms as possible, but _not_ if that
+involves incompatible patches for the same platform floating around the
+net.) 
+
+
+			 PORTING INSTRUCTIONS
+
+In the configs/ directory you will find several build configuration
+files for all platforms supported by Motion2D. You can generate your own
+config files by hand. The content of such a file is very simple. You just
+need to specify the compiler and the associated compiling options.
+
+1) Create your own configuration file in the configs/ directory.
+
+2) Run the configure script to create your new makefiles.
+
+
+Make a unified diff (diff -u) and send the patch and your new 
+configuration to Motion2D@irisa.fr
+
+For most Unix varieties, that's all.  Some may need some include file
+tweaks.  Good luck, and again, feel free to send mail to 
+Motion2D@irisa.fr
+

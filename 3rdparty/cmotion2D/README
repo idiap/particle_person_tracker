@@ -1,0 +1,49 @@
+          Motion2D FREE EDITION 1.3.11.1 SOURCE CODE-stable DISTRIBUTION
+
+This is the official release of the Motion2D Free Edition version 1.3.11.1.
+
+You may use the Motion2D Free Edition for software development free of charge
+only if you develop Free (non-proprietary) Software. The LICENSE.QPL file
+explains what you may or may not do with the Motion2D Free Edition.
+
+The Motion2D Free Edition may only be used on Unix and Windows Systems.
+
+If you want to use Motion2D for developing commercial, proprietary, or other
+software not covered by the terms listed in the LICENSE.QPL file, you must have
+a license for the Motion2D Professional Edition. 
+
+For questions regarding purchase and pricing for the Motion2D Professional
+Edition, please contact us at Motion2D@irisa.fr or write to:
+
+        Irisa/Inria Rennes
+	Patrick Bouthemy
+        Projet Vista
+        Campus Universitaire de Beaulieu
+        35042 Rennes Cedex
+        France
+
+        fax:   +33 2 99 84 71 71
+        email: Patrick.Bouthemy@irisa.fr
+        www:   http://www.irisa.fr/vista
+
+
+The INSTALL file explains how to install Motion2D.
+
+The Motion2D Free Edition is currently supported on Linux, Solaris, SunOS and
+Irix. If you want to port Motion2D to a new platform, please read the PORTING
+file.
+
+The Motion2D Reference Documentation is available in HTML format in the
+Motion2D/doc/html directory. Start your favorite Web browser with the
+doc/html/index.html file.
+
+The example programs in the examples directory demonstrate some Motion2D
+features. You can study these examples to get an overview of how Motion2D
+programs can be written, or look at doc/html/examples.html with your
+browser.
+
+If you find any bugs, please see information in the reference
+documentation about how to report it.
+
+If you are interested in the Motion2D Professional Edition, please write
+to Motion2D@irisa.fr.

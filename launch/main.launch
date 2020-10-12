@@ -1,0 +1,32 @@
+<!--
+
+Copyright (c) 2017-2020 Idiap Research Institute, <http://www.idiap.ch>
+
+Written by Olivier Canévet <olivier.canevet@idiap.ch>
+
+See COPYING file for the complete license text.
+
+-->
+
+<launch>
+
+  <arg name="color"            default="/camera/rgb/image_raw" doc="Color image topic" />
+  <arg name="config"           default="config_cv.ini"         doc="Configuration file" />
+  <arg name="width"            default="0"    doc="Image width" />
+  <arg name="height"           default="0"    doc="Image height" />
+  <arg name="scale"            default="1.0"  doc="Scale to resize image preserving aspect ratio" />
+  <arg name="particles"        default="50"   doc="Number of particles for the tracker" />
+  <arg name="detector"         default="cv"   doc="Face detector type cv|openpose|openheadpose" />
+  <arg name="delay"            default="200"  doc="Delay in ms between 2 successive call to face detector" />
+  <arg name="min_height_ratio" default="0.2"  doc="Image height ratio to conitnue tracking" />
+  <arg name="visu"      default="0"   doc="Whether to display GUI results" />
+  <arg name="opts"      default=""    doc="Additional option to pass to command line" />
+
+
+  <node name="person_tracker"
+        pkg="particle_person_tracker"
+        type="openpose_facetrack"
+        args="-c $(find particle_person_tracker)/../../devel/lib/particle_person_tracker/$(arg config) -i ros://$(arg color) -d ros:///tracklet -h $(arg height) -w $(arg width) -t $(arg delay) -p $(arg particles) -s $(arg scale) -f $(arg detector) -M $(arg min_height_ratio) -v $(arg visu) $(arg opts)"
+        output="screen"/>
+
+</launch>

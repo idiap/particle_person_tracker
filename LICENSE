@@ -1,0 +1,61 @@
+License - for Non-Commercial Research and Educational Use Only
+
+Copyright (c) 2020, Idiap Research Institute
+
+All rights reserved.
+
+Run, copy, study, change, improve and redistribute source and binary forms, with
+or without modification, are permitted for non-commercial research and
+educational use only provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+may be used to endorse or promote products derived from this software without
+specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+For permission to use for commercial purposes, please contact Idiap's Technology
+Transfer Office at tto@idiap.ch
+
+**************** THIRD-PARTY SOFTWARE NOTICES AND INFORMATION *****************
+
+This project incorporates material from the project(s) listed below
+(collectively, "Third Party Code").
+
+A. Motion 2D (https://www.irisa.fr/vista/Motion2D/index.html)
+    - Based on Motion 2D : a software from INRIA
+    
+This project makes use of the project(s) listed below (collectively, "Third
+Party Software").
+
+B. Open Pose  (https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+    - OpenPose is freely available for free non-commercial use. Please make sure
+    to read the license before installing it
+    https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/LICENSE
+
+C. OpenCV (https://github.com/opencv/opencv)
+    - License: Apache 2.0
+
+D. OpenHeadPose (https://gitlab.idiap.ch/software/openheadpose)
+    - License: BSD-3-Clause
+
+E. ROS (http://wiki.ros.org/)
+    - License: BSD-3-Clause
+
+************ END OF THIRD-PARTY SOFTWARE NOTICES AND INFORMATION **************

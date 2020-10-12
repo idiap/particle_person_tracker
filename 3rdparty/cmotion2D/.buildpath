@@ -1,0 +1,5 @@
+OS			= Linux
+
+MOTION2D_HOME		= /home/idiap/vkhalidov/prog/VFOA_humavips_svn/vfoa/cmotion2D
+MOTION2D_DIR_SRC	= $(MOTION2D_HOME)/src
+

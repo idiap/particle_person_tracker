@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="9">
+<parameters class_id="0" tracking_level="0" version="0">
+	<num_blocks_row>1</num_blocks_row>
+	<num_blocks_col>1</num_blocks_col>
+	<num_cells_block_row>1</num_cells_block_row>
+	<num_cells_block_col>1</num_cells_block_col>
+</parameters>
+<mean_skin_templates class_id="1" tracking_level="0" version="0">
+	<size>1</size>
+	<feature class_id="2" tracking_level="0" version="0">
+		<index>0</index>
+		<head_pose class_id="3" tracking_level="0" version="0">
+			<pan>10</pan>
+			<tilt>10</tilt>
+			<roll>10</roll>
+		</head_pose>
+		<data>
+			<count>1</count>
+			<item>1</item>
+		</data>
+	</feature>
+</mean_skin_templates>
+<stddev_skin_templates class_id="1" tracking_level="0" version="0">
+    <size>1</size>
+    <feature class_id="2" tracking_level="0" version="0">
+        <index>0</index>
+        <head_pose class_id="3" tracking_level="0" version="0">
+            <pan>10</pan>
+            <tilt>10</tilt>
+            <roll>10</roll>
+        </head_pose>
+        <data>
+            <count>1</count>
+            <item>1.1</item>
+        </data>
+    </feature>
+</stddev_skin_templates>
+</boost_serialization>
+

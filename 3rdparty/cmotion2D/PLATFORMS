@@ -1,0 +1,28 @@
+Before you build the Motion2D library and example programs, you must run the
+"configure" script to set the platform information and other build
+settings.  You can use the -platform option to specify the operating
+system and compiler you are using.
+
+Supported platforms and compilers:
+
+  linux-g++	    
+  sunos-g++
+  solaris-g++	    solaris-CC
+  irix64-g++	    irix64-CC
+  cygwin-g++
+  Visual-C++
+
+Limitations:
+
+  Use Gnu Make (gmake) to compile Motion2D.
+
+Example:
+
+  ./configure -help
+  ./configure -platform linux-g++ -verbose
+
+Customization:
+
+  You can create your own custom configuration by adding new files to
+  the configs directory. 
+

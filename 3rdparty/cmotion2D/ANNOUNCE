@@ -1,0 +1,46 @@
+The Vista research team (Irisa / Inria Rennes) (http://www.irisa.fr/vista)
+is pleased to announce the release of Motion2D version 1.3.11.1.
+
+Motion2D is a multi-platform object-oriented library to estimate 2D parametric
+motion models in an image sequence. It can handle several types of motion
+models, namely, constant (translation), affine, and quadratic models. Moreover,
+it includes the possibility of accounting for a global variation of
+illumination. As you know, the use of such motion models has been proven
+adequate and efficient in issues such as optic flow computation, motion
+segmentation, detection of independent moving objects, object tracking, or
+camera motion estimation, and in numerous application domains, such as dynamic
+scene analysis, video surveillance, visual servoing for robots, video coding,
+or video indexing.  Motion2D is an extended and optimized implementation of the
+robust, multi-resolution and incremental estimation method (exploiting only the
+spatio-temporal derivatives of the image intensity function) we defined several
+years ago (J.-M. Odobez and P. Bouthemy, Robust multiresolution estimation of
+parametric motion models. Journal of Visual Communication and Image
+Representation, 6(4):348-365, December 1995).  Real-time processing is
+achievable for motion models involving up to 6 parameters (for 256x256 images).
+Motion2D can be applied to the entire image or to any pre-defined window or
+region in the image.
+
+Motion2D is released in different versions: 
+
+1. Motion2D Free Edition: version of Motion2D available for development of Free
+   and Open Source software only (no commercial use). It is provided free of
+   charge under the terms of the Q Public License found in the LICENSE.QPL
+   file. It includes the source code and makefiles for Linux, Solaris, SunOS,
+   and Irix.
+
+2. Motion2D Professional Edition: version provided for commercial software
+   development. This version also supports Windows 95 and NT. For questions
+   regarding purchase and pricing (royalties) for the Motion2D Professional
+   Edition, please contact us at Motion2D@irisa.fr
+
+Motion2D Free Edition can be downloaded at http://www.irisa.fr/vista/Motion2D
+
+A fully cross-referenced online html documentation is available.
+
+For more information about Motion2D, you can contact us at Motion2D@irisa.fr
+
+
+
+
+
+

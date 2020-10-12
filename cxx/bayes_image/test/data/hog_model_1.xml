@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="9">
+<parameters class_id="0" tracking_level="0" version="0">
+	<num_blocks_row>1</num_blocks_row>
+	<num_blocks_col>1</num_blocks_col>
+	<num_cells_block_row>1</num_cells_block_row>
+	<num_cells_block_col>1</num_cells_block_col>
+	<num_hist_bins>8</num_hist_bins>
+</parameters>
+<mean_hog_templates class_id="1" tracking_level="0" version="0">
+	<size>1</size>
+	<feature class_id="2" tracking_level="0" version="0">
+		<index>0</index>
+		<head_pose class_id="3" tracking_level="0" version="0">
+			<pan>10</pan>
+			<tilt>10</tilt>
+			<roll>10</roll>
+		</head_pose>
+		<size>1</size>
+		<histogram>
+			<count>8</count>
+			<item_version>0</item_version>
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+			<item>4</item>
+			<item>5</item>
+			<item>6</item>
+			<item>7</item>
+			<item>8</item>
+		</histogram>
+	</feature>
+</mean_hog_templates>
+<stddev_hog_templates class_id="1" tracking_level="0" version="0">
+    <size>1</size>
+    <feature class_id="2" tracking_level="0" version="0">
+        <index>0</index>
+        <head_pose class_id="3" tracking_level="0" version="0">
+            <pan>10</pan>
+            <tilt>10</tilt>
+            <roll>10</roll>
+        </head_pose>
+        <size>1</size>
+        <histogram>
+            <count>8</count>
+            <item_version>0</item_version>
+            <item>1.1</item>
+            <item>2.2</item>
+            <item>3.3</item>
+            <item>4.4</item>
+            <item>5.5</item>
+            <item>6.6</item>
+            <item>7.7</item>
+            <item>8.8</item>
+        </histogram>
+    </feature>
+</stddev_hog_templates>
+</boost_serialization>
+

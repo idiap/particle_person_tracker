@@ -1,0 +1,43 @@
+Motion2D 1.3.10 is an open source release.
+
+
+This file describes the changes between Motion2D 1.3.9 and 1.3.10.
+
+****************************************************************************
+*                           General                                        *
+****************************************************************************
+
+- Modifications and improvements in the PNG image file support.
+
+****************************************************************************
+*                           Library                                        *
+****************************************************************************
+
+- Creation of a new library (named liblocalpng.a) dedicated to PNG image file
+  format. The corresponding files were previously included in the Motion2D
+  library.
+
+- Some memory leeks and bugs are suppressed in the PNG image file support.
+
+- CMotion2DModel: Addition of a new method:
+  . CMotion2DModel::getModelLevel()
+
+- CMotion2DEstimator: 
+  . In CMotion2DEstimator::estimate() the computation of the normalized support
+    size was modified.
+  . CMotion2DEstimator::setFirstEstimationLevel() and
+    CMotion2DEstimator::setLastEstimationLevel() were modified in order to
+    return an error if the requested level is not autorized.
+
+****************************************************************************
+*                           Examples                                       *
+****************************************************************************
+
+- The Motion2D example: 
+  . Stops the program when first and last estimation levels are bad.
+
+****************************************************************************
+*                           Documentation                                  *
+****************************************************************************
+
+- Some improvements and updates.

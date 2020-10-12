@@ -1,0 +1,97 @@
+IFLAGS		= -I$(MOTION2D_DIR_INCLUDE)
+LFLAGS		= -L$(MOTION2D_LIBPATH)
+
+CXX		= $(CONF_CXX)
+CXXFLAGS	= $(CONF_CXXFLAGS) $(CXXFLAGS_OPT) $(LDFLAGS_OPT) $(IFLAGS) -D__NO_IMAGEIO_MPEG_
+
+PURIFY		= purify -optimize-save-o7=no -cache-dir=/tmp \
+		  -first-only=yes -always-use-cache-dir=yes \
+
+#
+# Librairy associated to Motion2D
+#
+MOTION2D_LD	= $(LFLAGS) -lMotion2D$(SUFFIX) $(MOTION2D_LIBS) -lm
+
+
+.KEEP_STATE	:
+.PRECIOUS       :
+
+
+all install	: directory Motion2D$(SUFFIX) Warping$(SUFFIX)
+	@echo
+	@echo "The Motion2D examples are now built in $(MOTION2D_BINPATH)"
+	@echo
+
+purify		: directory Motion2D$(SUFFIX)-pur
+	@echo
+	@echo "The Motion2D examples are now built in $(MOTION2D_BINPATH)"
+	@echo
+
+
+directory:
+	@if [ ! -d $(MOTION2D_BINPATH) ] ;\
+	then \
+		echo "*" ; \
+		echo "* Creation of the $(MOTION2D_BINPATH) directory..." ; \
+		echo "*" ; \
+		mkdir $(MOTION2D_BINPATH) ; \
+	fi ;
+
+$(MOTION2D_LIBNAME)::
+	(cd $(MOTION2D_DIR_SRC); $(MAKE))
+
+
+Motion2D$(SUFFIX): $(MOTION2D_LIBNAME) Motion2D.cpp
+	$(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Motion2D$(SUFFIX) Motion2D.cpp $(MOTION2D_LD)
+
+Motion2D$(SUFFIX)-pur: $(MOTION2D_LIBNAME) Motion2D.cpp
+	$(PURIFY) $(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Motion2D$(SUFFIX)-pur Motion2D.cpp \
+	$(MOTION2D_LD)
+
+Motion2DTest$(SUFFIX): $(MOTION2D_LIBNAME) Motion2DTest.cpp
+	$(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Motion2DTest$(SUFFIX) Motion2DTest.cpp \
+	$(MOTION2D_LD)
+
+Motion2DTest$(SUFFIX)-pur: $(MOTION2D_LIBNAME) Motion2DTest.cpp
+	$(PURIFY) $(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Motion2DTest$(SUFFIX)-pur Motion2DTest.cpp \
+	$(MOTION2D_LD)
+
+Warping$(SUFFIX): $(MOTION2D_LIBNAME) Warping.cpp
+	$(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Warping$(SUFFIX) Warping.cpp $(MOTION2D_LD)
+
+Crop$(SUFFIX): $(MOTION2D_LIBNAME) Crop.cpp
+	$(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Crop$(SUFFIX) Crop.cpp $(MOTION2D_LD)
+
+MakeDiff$(SUFFIX): $(MOTION2D_LIBNAME) MakeDiff.cpp
+	$(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/MakeDiff$(SUFFIX) MakeDiff.cpp $(MOTION2D_LD)
+
+Motion2DFrancois$(SUFFIX): $(MOTION2D_LIBNAME) Motion2DFrancois.cpp
+	$(CXX) $(CXXFLAGS) \
+	-o $(MOTION2D_BINPATH)/Motion2DFrancois$(SUFFIX) Motion2DFrancois.cpp \
+	$(MOTION2D_LD)
+
+clean:
+	rm -f *~
+	rm -f *%
+	rm -f *.o
+	rm -f -r ../*/SunWS_cache ../*/*/SunWS_cache
+	rm -f -r ../*/ii_files ../*/*/ii_files
+	rm -f -r ../*/ti_files ../*/*/ti_files
+
+uninstall:
+	rm -f $(MOTION2D_BINPATH)/Motion2D$(SUFFIX)
+	rm -f $(MOTION2D_BINPATH)/Motion2D$(SUFFIX)-pur
+	rm -f $(MOTION2D_BINPATH)/Motion2DTest$(SUFFIX)
+	rm -f $(MOTION2D_BINPATH)/Motion2DTest$(SUFFIX)-pur
+	rm -f $(MOTION2D_BINPATH)/Warping$(SUFFIX)
+	rm -f $(MOTION2D_BINPATH)/Crop$(SUFFIX)
+	rm -f -r ../*/SunWS_cache ../*/*/SunWS_cache
+	rm -f -r ../*/ii_files ../*/*/ii_files
+	rm -f -r ../*/ti_files ../*/*/ti_files
