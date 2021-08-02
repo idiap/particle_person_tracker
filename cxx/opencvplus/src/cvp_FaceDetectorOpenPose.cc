@@ -25,7 +25,7 @@ cvp_FaceDetectorOpenPose(const std::string& model_folder,
   m_is_initialised(0),
   m_pose_model(op::flagsToPoseModel(op::String(pose_model))),
   scaleAndSizeExtractor(op::flagsToPoint(op::String(net_resolution), "-1x128"),
-                        op::Point<int>(-1, -1), 1, 0.3)
+                        0.0f, op::Point<int>(-1, -1), 1, 0.3)
 {
   std::cout << "[FaceDetectorOpenPose]"
             << " Model " << pose_model
